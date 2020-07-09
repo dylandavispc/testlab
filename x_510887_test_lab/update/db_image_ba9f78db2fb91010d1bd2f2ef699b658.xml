@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <format/>
+        <height/>
+        <image>03aff09b2fb91010d1bd2f2ef699b65e</image>
+        <name>bulb_led.svg</name>
+        <size_bytes>2491</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-09 13:57:51</sys_created_on>
+        <sys_id>ba9f78db2fb91010d1bd2f2ef699b658</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>bulb_led.svg</sys_name>
+        <sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope>
+        <sys_update_name>db_image_ba9f78db2fb91010d1bd2f2ef699b658</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-09 13:57:56</sys_updated_on>
+        <thumbnail/>
+        <width/>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <file_name>image</file_name>
+        <hash>37c215b9183118d50f8bc3e861b3e51f078014e86713c0d6c49ec4ad3cba3afe</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>2491</size_bytes>
+        <size_compressed>1225</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-09 13:57:56</sys_created_on>
+        <sys_id>03aff09b2fb91010d1bd2f2ef699b65e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2020-07-09 13:57:56</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>ba9f78db2fb91010d1bd2f2ef699b658</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="03aff09b2fb91010d1bd2f2ef699b65e">03aff09b2fb91010d1bd2f2ef699b65e</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-09 13:57:56</sys_created_on>
+        <sys_id>43aff09b2fb91010d1bd2f2ef699b65e</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>bVZNb9s4ED23QP8Dq72GtEhRIuXGKbrqIQukp13kUvSQyEpsVLUN23E+iv3vO++RrlNgg1iiOcOZN28+6POPTz9GdRi2u+V6NSusKQs1rPr1fLm6nxUP+zsdi48X796ev9da/TWOD7v99mY/zNXts+pE6+5ZfR52y/uV+nv/MF+up2qx32+mk0lP4Zwy069/KK1hZne4f+3NFkr8r3azIh97fHw0j5VZb+8nrizLiehnlenTuFx9/z9F27bthFJRnRXl5qlQz+n97u0bdVgOj3+uIVClirWyVV2o3f55HGbFsLq5HQd9e9N/v9+uH1bz6Wp4VCfFD3Q+3W1uetHebIfdsD0MhUTy5pwm1P55I5L98LSf9LtdcXH+/mv3+dM/n76KypvNzX6hfqq75ThO1R93/Pug/hXRt28X5xNaoC0qzmfFF+9MfaaCsZ2zpuLqTPkz5bzxXPjaNH15phrjzpSFsnVYUm6DiWOJI/Lo8wJ61gR5RtPKU6y6YCrVJxG8lHg4WChhsTKVCOMvJw1wVPjqsfIHW5kAEBXMtrRdE0p1XI+1iRogYJMAWi0Pf1x60x7wdKoXb5pQvbxaRqLlA3iaAQomXQGOnNcCpHewQF0xFrWL2aqLxomw0jXMVXLM5nhk1XTRHnlsiDNxeyT8RanMvhyKvW0RO2L0dF2DhbTGE9GTtTJzxne8DCBGJ4lOAnnFLsChI4GugtSS4JPDF/WlrrEVvWlUL5EDnMRCCqIJmpkSht1ClnEhZpteHiArwKNuUyq9FiUBaBrtWSK6AVXiSTTa3gqXQGGs7EcsIjITVTqRaiboyPBBnBB62YQ+BVUnYC3YBiMWmUrQKu4FlElIdlrjuzqyfGS7lk8Umk5hSsxVmb9YxuzkYAMrkmeA8ZrJ0Mg8dgG2ZshWgvFJ4CmU+AEJwbeLmLhhX1gm5xgP+wXlDUSgB+6x7UwqIxLRIhybxXWmj2Gnkz71SsQWCfNMjWRFuqir2EotLVQWpyNdnIJF5IFfpDaBFIwh140E7lMcAhacIF3aSa5qMiAInTgAnUSZEIo7cSru6nIhiA4+AEvVVWS/RXaIIJKGk2vB4eNvOBBbkxpRCNYpMsGmxJypr2k/pNFRQYmdK1BSsYO/X2ZQsk0Ssi4IvabF0LC8W/Ye6/YEQzClRmkDO6HkfMAHleHQTtpj2wo5EKCU04zIBdGiaEU5YIKg+WUwNB3nVGKNXIC0SMbQLKhtNhhHXh6IbHzVc255CBxOh9yaqR4YY8V/FjYLzpZ9bmAWETyRSBoXu51gqxlh5FhoXq1z5BgIrBcrM8tdSv58bhF8XC6HKvXsiHEFSro61a2j05rFZx1hv7IG22hemWohTTKXJ5jX+dZoRi2DitPXMglOJ6lnAjhmjL1KZuw1TR3NllJlVxXvHcF5ANDRoWWFtGtKUf/kORykn+uF82NJeq7ytig0jvXaImoUW0xjpjleCyGVmv0Ndqvzreb60xSOeKWLLk+F17P5uKt9GhFOH3PF2Yf0W52zX2tWtlQeEowU4D6QEEIa1rkgRD1PXEtcnLES52XgHEW3kj9cRbjA0iBpu8BrrmH/NAgxoDKORLwUaoLfUPhRJO//AKHJunG7CQAA</data>
+        <length>1620</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="03aff09b2fb91010d1bd2f2ef699b65e">03aff09b2fb91010d1bd2f2ef699b65e</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-09 13:57:56</sys_created_on>
+        <sys_id>c3aff09b2fb91010d1bd2f2ef699b65e</sys_id>
+    </sys_attachment_doc>
+</record_update>

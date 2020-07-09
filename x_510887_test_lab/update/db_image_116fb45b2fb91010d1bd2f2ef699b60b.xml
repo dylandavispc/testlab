@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <format/>
+        <height/>
+        <image>d67f38db2fb91010d1bd2f2ef699b684</image>
+        <name>bulb_hal.svg</name>
+        <size_bytes>2228</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-09 13:56:56</sys_created_on>
+        <sys_id>116fb45b2fb91010d1bd2f2ef699b60b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>bulb_hal.svg</sys_name>
+        <sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope>
+        <sys_update_name>db_image_116fb45b2fb91010d1bd2f2ef699b60b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-09 13:57:04</sys_updated_on>
+        <thumbnail/>
+        <width/>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <file_name>image</file_name>
+        <hash>cf155156b7edd3f5fe134f69357b2555eb383c979d7f5d6b510df59c1dd9c7a6</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>2228</size_bytes>
+        <size_compressed>1084</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-09 13:57:04</sys_created_on>
+        <sys_id>d67f38db2fb91010d1bd2f2ef699b684</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2020-07-09 13:57:04</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>116fb45b2fb91010d1bd2f2ef699b60b</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="d67f38db2fb91010d1bd2f2ef699b684">d67f38db2fb91010d1bd2f2ef699b684</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-09 13:57:04</sys_created_on>
+        <sys_id>1a7f38db2fb91010d1bd2f2ef699b684</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>nVZNb9tGED2nQP/Dhr1qV/vFJalIDlLl4ALJqYUvQQ7yihaFMJIg0pTtoP+982ZJxwaKHhqAu6Od2bczbz6c5fuH760Y6nO3Px5WmVE6E/UhHrf7w26V3fd3sszeX/36y/KtlOKPtr3v+vOmr7fi9lGsyeruUXysu/3uIP7s77f740I0fX9azOeRlVvWqXj8LqQETDfsXr5mMkHvH7pVNl67XC7q4tTxvJtbrfWc7EeTxUO7P3z7N0NTVdWctWS6yvTpIROP4z7s68vvR5wKLcpcGJdnousf23qV1YfNbVvL2038tjsf7w/bxaG+iJ+G7/jlRXfaRLI+neuuPg91RmG8EUvGEP3jiVR9/dDPY9dlV8u3X9YfP/z14QvZvDlt+mYmznXsxQ9xt2/bhfjtjv+9E3+TwdevV8s54wByyYbkqdeq4gBKrYpMxHbTET9dT1xd9tu+AW9lJpp6v2t6+uHA4vw1hFfhf0LAabFdZZ+9VflMFMqsrVGOpZnwM2G98iz4XIWoZyIoOxMGxsZCZL0pVNlqXKEljgLsjCpoLVVFK6HaQjkRkwqvaCwWCBqITjlSls+PBPjh8NND8gO5XsAJB9iKsXN2xU1ym6tSwglgsgOVpMVPolfVgNWKSK9JdtXTVnEkkj64JzlA8kk6uEP3JTkSLRDYlsBKacsR1ZbKktLJHHCOrpkxHpLCujQTj4H9TNxOhD+Jzzm7ETRF6BCeVUYyc2Qu3Sg0QI/SMrk4hYkcLQbproFCYK4AcB5UjkCjTjfMCyQIDYGJmMBGPqcXeRmMvwYSAVLmKeJQEXN5QwyZQebXOISOqS0KAiRm/xPPgtrEJYdrU6JYK/BWSb5yaWDL05bO2FCacacs3JQEs6Y7YLOCC66aHCFqn51K3CJNxL+9diX5QDiWP0oAfWAjICrRmopO6YV17pgyyzi54YRbi+0FGrADCiBPNZlcxz4GqFVopXWpkihzmtH9+JW800z8lFDMDSM9iRFWU019ctxDFqkkT1t61pCr7oa1yDX0mrJPld9Y3zK/4zWN6AsPr4JeF1zIVGLET8iZHXolkLKk7hTEChJRSpP6bewAJGUK5jmqSo4NbKFzY6KwpZ7GqX91il+onCpyHpkPydMDgudsCq7UVNQ5h2lkGGSgmvK4gt8O+Ky4QftEtIHjPAY6ROcHPk2O/nQOXcBZRy9MX0OLF1wOsEpdkjaLIcbOjRl1U2YjvWgTG3mqbJMEGlGD1YiQKxv00JI/T0hycKCWQf9iFiE8nndJCNweIvVHenSih6ziKx/CuFcYCIETx8zxVEBqOCvjF0AzV5uPqYlYAQrSdEsMeEmDzcK6AE2YWzTTArwNEmY893wSAtisuATIAek8IsXKYkwqnY6SzSRjFeuCZ3rOkRSBZR7iU60+pT9OS/xvgPZ/APIIGT+0CAAA</data>
+        <length>1432</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="d67f38db2fb91010d1bd2f2ef699b684">d67f38db2fb91010d1bd2f2ef699b684</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-09 13:57:04</sys_created_on>
+        <sys_id>9a7f38db2fb91010d1bd2f2ef699b684</sys_id>
+    </sys_attachment_doc>
+</record_update>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <format/>
+        <height/>
+        <image>4a3f74db2fb91010d1bd2f2ef699b6cb</image>
+        <name>bulb_cfl.svg</name>
+        <size_bytes>1976</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-09 13:55:39</sys_created_on>
+        <sys_id>bbfeb0db2fb91010d1bd2f2ef699b6c2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>bulb_cfl.svg</sys_name>
+        <sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope>
+        <sys_update_name>db_image_bbfeb0db2fb91010d1bd2f2ef699b6c2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-09 13:55:57</sys_updated_on>
+        <thumbnail/>
+        <width/>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <file_name>image</file_name>
+        <hash>5aa5cc9681681e10685461172d93b452e1b95a8ab1c225c55ff0418f47921e91</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>1976</size_bytes>
+        <size_compressed>987</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-09 13:55:57</sys_created_on>
+        <sys_id>4a3f74db2fb91010d1bd2f2ef699b6cb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2020-07-09 13:55:58</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>bbfeb0db2fb91010d1bd2f2ef699b6c2</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="4a3f74db2fb91010d1bd2f2ef699b6cb">4a3f74db2fb91010d1bd2f2ef699b6cb</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-09 13:55:57</sys_created_on>
+        <sys_id>8a3f74db2fb91010d1bd2f2ef699b6cb</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>bVVNj9s2ED2nQP8Do15NWkNSlOTYG6TOIQWcU4O9BDl4Za3XiCIbltZeb9D/3jdD+SNFF2tyPPM4H2+G9PT9y49GHep9t9m2s4RMmqi6rbarTbueJc/9oy6S93e//zZ9q7X6q2meu36/7OuVejipOVCPJ/Wx7jbrVv3dP68224l66vvdZDyuxLgSm6m2P5TW7KY7rG+jUaIQv+1myXDseDyaozPb/Xps0zQdAz9AJi/Npv3+f0Aqy3IsVkBnSbp7SdRp2A+b+vjnlrUqVUWmyGWJ6vpTU8+Sul0+NLV+WFbf1/vtc7uatPVRXYHvJPKk2y0roHf7uqv3hzpBGW/UVHyo/rSDqa9f+nHVdcnd9O3X+ccPXz58BebNbtk/qZ/qcdM0E/XHo/y9U//A9O3b3XQsHtjZVICrWfKZMkMj5YPJK22NHalUe0OajMdeaGdCpVMI1gTYTK4z40fKwRyMbTJrMg0XoYKdcSMldgBHKrA7IFUlhojIBQG/XgALCiaT+H5OQQSs8BiVuchDgq/J+NfcQ24cAKlxnGPQliuAayclOJOxmriky2ZZXLiCw1tDXHMOVYay2BWOZpwrcoZWMHaoxsevQfKv0lilGEtePJ8WXdZ4xkPfaFtyIUUkVwgskJvQEi4cwFkYIgnI8eI5DUjcVQDgJUWEWAg3B7EXgYOCv3k4s8asFwKxnNaVoNdE/Ye8XCJkKHcgD0RE6pzm3HJWS2mglWLdTlvLHnmtUkmJ/4Vc2SsMDp/BedmEzBQDcNOBuHl273SOqKBLk0PHStSFeorGlabUREjtMlZeOhsuo3eZStYyp6xkSheUc+wMyaub/jvJT5/7xv2gqJJUCSPgmeXzwHMvpIvnkb7pViyXpJFe2BaRhLQsVljGjSL6CeEKdUBXAvMm8MA5lTI4cXyQUTM0WEaMY+YMyc83gtxZbsAsYysfc6FImD+L3pT3Zcl3j7iBcoeIry9FodAIJ7VEG4N8nFCrywNIKZrhbtCFRR+bigiRzWook3hmSGYXYhBRzXPH3AViRC4UZgUXcR28V/U5k9kni8I+4VZaHiArH35Z4kxye6mhUpKY48kp+AS+ZCR0YBq9NPzsif3K5BGoskomNd58uanDEJocFTq5WdXwMvjhU8iO34rG8kuC8u7F1dVxisFdOIpB7IEzvcGy9QYLphViyahEO1WFBILCDncjmiHeywEcD8J3XsbnTe59EYUsbhh0rs3K84XvQRccMDfFJ4dhwvh7IbFgvc5khfGApZw7Grwzd4HXKF+jDm/GlH8Rsf8LifH+EbgHAAA=</data>
+        <length>1304</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="4a3f74db2fb91010d1bd2f2ef699b6cb">4a3f74db2fb91010d1bd2f2ef699b6cb</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-09 13:55:57</sys_created_on>
+        <sys_id>0e3f74db2fb91010d1bd2f2ef699b6cb</sys_id>
+    </sys_attachment_doc>
+</record_update>

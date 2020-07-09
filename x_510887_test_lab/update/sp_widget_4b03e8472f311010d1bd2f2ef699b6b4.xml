@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700|Open+Sans+Condensed:700);
+
+.selections { 
+  color: #000; 
+  width:40%;
+  height: 30px;
+  direction: rtl;
+  font-size: 1em;
+}
+
+#myCalculator { margin: 0; padding: 0; font-size: 16px; font-family: 'Open Sans', sans-serif; font-weight: 300; line-height: 24px; max-width: 800px; }
+
+#myCalculator h5 { font-weight: 800; font-size: 1em; }
+
+#myCalculator main { background-color: #444; }
+
+#myCalculator main calc-card {
+  width: 25%;
+  float: left;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+}
+
+#myCalculator main::after { content:''; display: block; clear: both; }
+
+#myCalculator main h5 { 
+	font-family: 'Open Sans Condensed', san-serif;
+  font-size: .9em;
+  letter-spacing: 1px;
+  margin: 0 0 5px 0;
+  text-transform: uppercase;
+}
+#myCalculator main p {
+	margin: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+#myCalculator main p + p {
+  font-size: 1em;
+  font-weight: 300;
+}
+#myCalculator main p + p::after {
+	content:'per year';
+  color: rgba(255,255,255,.5);
+  padding-left: 4px;
+}
+
+#myCalculator form {
+	background-color: #000;
+  margin: 0; padding: 10px 0px;
+}
+
+#myCalculator form h5 {
+	color: #aaa;
+  margin: 0 0 -5px;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+#myCalculator form p {
+  color: #888;
+  font-size: .8em;
+  margin: -5px 0 15px 0;
+}
+
+#myCalculator form br { display: none; }
+
+#myCalculator form &gt; div {
+	color: #fff;
+  width: 33%;
+  float: left;
+  text-align: center;
+  padding: 10px 0 5px 0;
+}
+
+#myCalculator form::after { 
+  content:''; 
+  display: block; 
+  clear: both;
+}
+
+@media screen and (max-width:500px) {
+  #myCalculator { font-size: 15px; }
+  #myCalculator main calc-card { background-size: 45px 71px;}
+  #myCalculator main h5 { margin: 0; font-size: 1em; letter-spacing: 0; }
+  #myCalculator main p { font-size: 1.5em; }
+  #myCalculator main p + p { font-size: 1.1em; font-weight: 400; }
+  #myCalculator main p + p::after { display: block; margin-top: -10px; color: #fff; }
+}
+
+
+
+
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>bulb_calculator</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Bulb Calculator</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:14:24</sys_created_on>
+        <sys_id>4b03e8472f311010d1bd2f2ef699b6b4</sys_id>
+        <sys_mod_count>95</sys_mod_count>
+        <sys_name>Bulb Calculator</sys_name>
+        <sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope>
+        <sys_update_name>sp_widget_4b03e8472f311010d1bd2f2ef699b6b4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-09 15:48:48</sys_updated_on>
+        <template><![CDATA[<div id="myCalculator">
+  
+  <main>
+    <calc-card id="inc" image="bulb_inc.svg" bg="#ba2d2d" bulb='Incandescent' cost=13.14 watt=100.0 />
+    <calc-card id="hal" image="bulb_hal.svg" bg="#de6615" bulb='Halogen' cost=9.46 watt=72.0 />
+    <calc-card id="cfl" image="bulb_cfl.svg" bg="#efc20f" bulb='CFL' cost=3.07 watt=23.4 />
+    <calc-card id="led" image="bulb_led.svg" bg="#36b23c" bulb='LED' cost=2.63 watt=20.0 />
+  </main>
+
+  <form>
+    <div>
+      <h5>Lumens</h5>
+      <p>Brightness <br>of Bulb</p>
+      <select class="selections">
+        <option value="600">600</option>
+        <option value="900">900</option>
+      </select>
+    </div>
+    <div>
+      <h5>kWh</h5>
+      <p>Kilowatt-<br>hour cost</p>
+      <input class="selections" type="number" value=12> cents
+    </div>
+    <div>
+      <h5>Hours</h5>
+      <p>Usage <br>per day</p>
+      <input class="selections" type="number" value=3>
+    </div>
+  </form>
+  
+</div>]]></template>
+    </sp_widget>
+</record_update>

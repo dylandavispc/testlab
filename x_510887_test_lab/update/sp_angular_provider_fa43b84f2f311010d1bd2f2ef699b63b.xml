@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_angular_provider">
+    <sp_angular_provider action="INSERT_OR_UPDATE">
+        <name>calcCard</name>
+        <script><![CDATA[function() {
+	return{
+		restrict: 'E',
+		scope: {
+			image: '@',
+			bg: '@',
+			bulb: '@',
+			cost: '@',
+			watt: '@'
+		},
+		// the \ is used because ES5 doesn't allow template literals
+		template:
+		'<div style="background-color:{{bg}};"> \
+		  <img style="width:50%; margin:3px" src="{{image}}"/> \
+			<div style="padding: 5px 0; background-color: rgba(0,0,0,.15);"> \
+				<h5>{{bulb}}</h5> \
+				<p>{{watt}}w</p> \
+				<p>&#36{{cost}}</p> \
+			</div> \
+		</div>'
+	};
+}]]></script>
+        <sys_class_name>sp_angular_provider</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 18:27:14</sys_created_on>
+        <sys_id>fa43b84f2f311010d1bd2f2ef699b63b</sys_id>
+        <sys_mod_count>62</sys_mod_count>
+        <sys_name>calcCard</sys_name>
+        <sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope>
+        <sys_update_name>sp_angular_provider_fa43b84f2f311010d1bd2f2ef699b63b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-09 15:18:27</sys_updated_on>
+        <type>directive</type>
+    </sp_angular_provider>
+</record_update>
