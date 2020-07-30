@@ -1,102 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <client_script><![CDATA[function($rootScope,$scope) {
+  c = this;
+
+	// Default values and options
+	$scope.lumen_options = [375, 600, 900, 1125, 1600];
+	$scope.current_lumens = 600;
+	$scope.current_cost = 12;
+	$scope.current_hours = 3;
+	$scope.total_days = 365;
+	
+	// Watt conversion rates for each bulb
+	$scope.inc_conversion = .0625;
+	$scope.hal_conversion = .0450;
+	$scope.cfl_conversion = .0146;
+	$scope.led_conversion = .0125;
+	
+	$scope.calculate = function() {
+		$scope.inc_wattage = ($scope.current_lumens * $scope.inc_conversion).toFixed(1);
+		$scope.hal_wattage = ($scope.current_lumens * $scope.hal_conversion).toFixed(1);
+		$scope.cfl_wattage = ($scope.current_lumens * $scope.cfl_conversion).toFixed(1);
+		$scope.led_wattage = ($scope.current_lumens * $scope.led_conversion).toFixed(1);
+		
+		if ( $scope.current_hours > 24 ) { $scope.current_hours = 24 }
+		
+		var total_hours = $scope.total_days * $scope.current_hours;
+		var cost = $scope.current_cost / 100;
+		
+		$scope.inc_cost = (($scope.inc_wattage * total_hours) / 1000 * cost.toFixed(2)).toFixed(2);
+		$scope.hal_cost = (($scope.hal_wattage * total_hours) / 1000 * cost.toFixed(2)).toFixed(2);
+		$scope.cfl_cost = (($scope.cfl_wattage * total_hours) / 1000 * cost.toFixed(2)).toFixed(2);
+		$scope.led_cost = (($scope.led_wattage * total_hours) / 1000 * cost.toFixed(2)).toFixed(2);
+		
+	};
+	
+	$scope.calculate();
+	
+}]]></client_script>
         <controller_as>c</controller_as>
-        <css>@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700|Open+Sans+Condensed:700);
-
-.selections { 
-  color: #000; 
-  width:40%;
-  height: 30px;
-  direction: rtl;
-  font-size: 1em;
-}
-
-#myCalculator { margin: 0; padding: 0; font-size: 16px; font-family: 'Open Sans', sans-serif; font-weight: 300; line-height: 24px; max-width: 800px; }
-
-#myCalculator h5 { font-weight: 800; font-size: 1em; }
-
-#myCalculator main { background-color: #444; }
-
-#myCalculator main calc-card {
-  width: 25%;
-  float: left;
-  text-align: center;
-  color: #fff;
-  font-size: 13px;
-}
-
-#myCalculator main::after { content:''; display: block; clear: both; }
-
-#myCalculator main h5 { 
-	font-family: 'Open Sans Condensed', san-serif;
-  font-size: .9em;
-  letter-spacing: 1px;
-  margin: 0 0 5px 0;
-  text-transform: uppercase;
-}
-#myCalculator main p {
-	margin: 0;
-  font-size: 1.5em;
-  font-weight: 700;
-}
-#myCalculator main p + p {
-  font-size: 1em;
-  font-weight: 300;
-}
-#myCalculator main p + p::after {
-	content:'per year';
-  color: rgba(255,255,255,.5);
-  padding-left: 4px;
-}
-
-#myCalculator form {
-	background-color: #000;
-  margin: 0; padding: 10px 0px;
-}
-
-#myCalculator form h5 {
-	color: #aaa;
-  margin: 0 0 -5px;
-  font-size: 1.5em;
-  font-weight: 500;
-}
-
-#myCalculator form p {
-  color: #888;
-  font-size: .8em;
-  margin: -5px 0 15px 0;
-}
-
-#myCalculator form br { display: none; }
-
-#myCalculator form &gt; div {
-	color: #fff;
-  width: 33%;
-  float: left;
-  text-align: center;
-  padding: 10px 0 5px 0;
-}
-
-#myCalculator form::after { 
-  content:''; 
-  display: block; 
-  clear: both;
-}
-
-@media screen and (max-width:500px) {
-  #myCalculator { font-size: 15px; }
-  #myCalculator main calc-card { background-size: 45px 71px;}
-  #myCalculator main h5 { margin: 0; font-size: 1em; letter-spacing: 0; }
-  #myCalculator main p { font-size: 1.5em; }
-  #myCalculator main p + p { font-size: 1.1em; font-weight: 400; }
-  #myCalculator main p + p::after { display: block; margin-top: -10px; color: #fff; }
-}
-
-
-
-
+        <css>@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700|Open+Sans+Condensed:700);&#13;
+&#13;
+.selections { &#13;
+  color: #000; &#13;
+  width:40%;&#13;
+  height: 30px;&#13;
+  direction: rtl;&#13;
+  font-size: 1em;&#13;
+}&#13;
+&#13;
+#myCalculator { &#13;
+  margin: 0; &#13;
+  padding: 0; &#13;
+  font-size: 16px; &#13;
+  font-family: 'Open Sans', &#13;
+    sans-serif; font-weight: 300; &#13;
+  line-height: 24px; &#13;
+  max-width: 800px;&#13;
+}&#13;
+&#13;
+#myCalculator h5 { font-weight: 800; font-size: 1em; }&#13;
+&#13;
+#myCalculator main { background-color: #444; }&#13;
+&#13;
+#myCalculator main calc-card {&#13;
+  width: 25%;&#13;
+  float: left;&#13;
+  text-align: center;&#13;
+  color: #fff;&#13;
+  font-size: 13px;&#13;
+}&#13;
+&#13;
+#myCalculator main::after { content:''; display: block; clear: both; }&#13;
+&#13;
+#myCalculator main h5 { &#13;
+	font-family: 'Open Sans Condensed', san-serif;&#13;
+  font-size: .9em;&#13;
+  letter-spacing: 1px;&#13;
+  margin: 0 0 5px 0;&#13;
+  text-transform: uppercase;&#13;
+}&#13;
+#myCalculator main p {&#13;
+	margin: 0;&#13;
+  font-size: 1.5em;&#13;
+  font-weight: 700;&#13;
+}&#13;
+#myCalculator main p + p {&#13;
+  font-size: 1em;&#13;
+  font-weight: 300;&#13;
+}&#13;
+#myCalculator main p + p::after {&#13;
+	content:'per year';&#13;
+  color: rgba(255,255,255,.5);&#13;
+  padding-left: 4px;&#13;
+}&#13;
+&#13;
+#myCalculator form {&#13;
+	background-color: #000;&#13;
+  margin: 0; padding: 10px 0px;&#13;
+}&#13;
+&#13;
+#myCalculator form h5 {&#13;
+	color: #aaa;&#13;
+  margin: 0 0 -5px;&#13;
+  font-size: 1.5em;&#13;
+  font-weight: 500;&#13;
+}&#13;
+&#13;
+#myCalculator form p {&#13;
+  color: #888;&#13;
+  font-size: .8em;&#13;
+  margin: -5px 0 15px 0;&#13;
+}&#13;
+&#13;
+#myCalculator form br { display: none; }&#13;
+&#13;
+#myCalculator form &gt; div {&#13;
+  color: #fff;&#13;
+  width: 33%;&#13;
+  float: left;&#13;
+  text-align: center;&#13;
+  padding: 10px 0 5px 0;&#13;
+}&#13;
+&#13;
+#myCalculator form::after { &#13;
+  content:''; &#13;
+  display: block; &#13;
+  clear: both;&#13;
+}&#13;
+&#13;
+@media screen and (max-width:500px) {&#13;
+  .selections { width: 55%; }&#13;
+  #myCalculator { font-size: 15px; }&#13;
+  #myCalculator main calc-card { background-size: 45px 71px;}&#13;
+  #myCalculator main h5 { margin: 0; font-size: 1em; letter-spacing: 0; }&#13;
+  #myCalculator main p { font-size: 1.5em; }&#13;
+  #myCalculator main p + p { font-size: 1.1em; font-weight: 400; }&#13;
+  #myCalculator main p + p::after { display: block; margin-top: -10px; color: #fff; }&#13;
+}&#13;
+&#13;
+&#13;
+&#13;
+&#13;
 </css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -117,41 +162,39 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-07-08 17:14:24</sys_created_on>
         <sys_id>4b03e8472f311010d1bd2f2ef699b6b4</sys_id>
-        <sys_mod_count>95</sys_mod_count>
+        <sys_mod_count>136</sys_mod_count>
         <sys_name>Bulb Calculator</sys_name>
         <sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package>
         <sys_policy/>
         <sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope>
         <sys_update_name>sp_widget_4b03e8472f311010d1bd2f2ef699b6b4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-07-09 15:48:48</sys_updated_on>
+        <sys_updated_on>2020-07-09 17:12:47</sys_updated_on>
         <template><![CDATA[<div id="myCalculator">
   
   <main>
-    <calc-card id="inc" image="bulb_inc.svg" bg="#ba2d2d" bulb='Incandescent' cost=13.14 watt=100.0 />
-    <calc-card id="hal" image="bulb_hal.svg" bg="#de6615" bulb='Halogen' cost=9.46 watt=72.0 />
-    <calc-card id="cfl" image="bulb_cfl.svg" bg="#efc20f" bulb='CFL' cost=3.07 watt=23.4 />
-    <calc-card id="led" image="bulb_led.svg" bg="#36b23c" bulb='LED' cost=2.63 watt=20.0 />
+    <calc-card id="inc" image="bulb_inc.svg" bg="#ba2d2d" bulb='Incandescent' cost={{inc_cost}} watt={{inc_wattage}} />
+    <calc-card id="hal" image="bulb_hal.svg" bg="#de6615" bulb='Halogen' cost={{hal_cost}} watt={{hal_wattage}} />
+    <calc-card id="cfl" image="bulb_cfl.svg" bg="#efc20f" bulb='CFL' cost={{cfl_cost}} watt={{cfl_wattage}} />
+    <calc-card id="led" image="bulb_led.svg" bg="#36b23c" bulb='LED' cost={{led_cost}} watt={{led_wattage}} />
   </main>
 
   <form>
     <div>
       <h5>Lumens</h5>
       <p>Brightness <br>of Bulb</p>
-      <select class="selections">
-        <option value="600">600</option>
-        <option value="900">900</option>
+      <select class="selections" ng-change="calculate()" ng-model="current_lumens" ng-options="o as o for o in lumen_options">
       </select>
     </div>
     <div>
       <h5>kWh</h5>
       <p>Kilowatt-<br>hour cost</p>
-      <input class="selections" type="number" value=12> cents
+      <input class="selections" ng-change="calculate()" type="number" ng-model="current_cost" value="{{current_cost}}"> cents
     </div>
     <div>
       <h5>Hours</h5>
       <p>Usage <br>per day</p>
-      <input class="selections" type="number" value=3>
+      <input class="selections" ng-change="calculate()" type="number" ng-model="current_hours" value="{{current_hours}}">
     </div>
   </form>
   

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph>tasks</glyph>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">d4e965572f3d1010d1bd2f2ef699b6f8</sp_column>
+        <sp_widget display_value="KB News">ad2326a45b110200e23dc7ad31f91a1e</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-09 17:02:20</sys_created_on>
+        <sys_id>d4e965572f3d1010d1bd2f2ef699b6fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>News</sys_name>
+        <sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope>
+        <sys_update_name>sp_instance_d4e965572f3d1010d1bd2f2ef699b6fc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-09 17:02:20</sys_updated_on>
+        <title>News</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=d4e965572f3d1010d1bd2f2ef699b6fc"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</application>
+        <file_path/>
+        <instance_id>dd8c29e5db260094387021c4059619b9</instance_id>
+        <instance_name>dev97566</instance_name>
+        <name>sp_instance_d4e965572f3d1010d1bd2f2ef699b6fc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph>tasks</glyph><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">d4e965572f3d1010d1bd2f2ef699b6f8</sp_column><sp_widget display_value="KB News">ad2326a45b110200e23dc7ad31f91a1e</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-07-09 17:02:20</sys_created_on><sys_id>d4e965572f3d1010d1bd2f2ef699b6fc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>News</sys_name><sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package><sys_policy/><sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope><sys_update_name>sp_instance_d4e965572f3d1010d1bd2f2ef699b6fc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-07-09 17:02:20</sys_updated_on><title>News</title><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=d4e965572f3d1010d1bd2f2ef699b6fc"/></record_update>]]></payload>
+        <payload_hash>-1834797670</payload_hash>
+        <record_name>News</record_name>
+        <reverted_from/>
+        <source>4faf90832f311010d1bd2f2ef699b6c7</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-09 17:02:20</sys_created_on>
+        <sys_id>90e965572f3d1010d1bd2f2ef699b6fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17334872d0a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-09 17:02:20</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>d8e96557773d101050ec29a6bd1757fd</update_guid>
+        <update_guid_history>d8e96557773d101050ec29a6bd1757fd:-1834797670</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="News">c56ae9572f3d1010d1bd2f2ef699b6ea</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-09 17:04:35</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>58fede9988e44110af83e16ef42a20e1</sys_id>
+        <sys_metadata>d4e965572f3d1010d1bd2f2ef699b6fc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>News</sys_name>
+        <sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope>
+        <sys_scope_delete display_value="">2935f8c70c7446b48e6319cadc6faae4</sys_scope_delete>
+        <sys_update_name>sp_instance_d4e965572f3d1010d1bd2f2ef699b6fc</sys_update_name>
+        <sys_update_version display_value="sp_instance_d4e965572f3d1010d1bd2f2ef699b6fc">90e965572f3d1010d1bd2f2ef699b6fe</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-09 17:04:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

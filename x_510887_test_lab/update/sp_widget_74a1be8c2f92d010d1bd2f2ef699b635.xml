@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function(spUtil, $rootScope) {
+  var c = this;
+	c.submitting = false;
+
+	c.submit = function() {
+		if (c.data.newIncident.issue === '' || c.data.newIncident.urgency === '') {
+			spUtil.addErrorMessage('Issue and urgency is required.');
+			return;
+		}
+		c.submitting = true;
+		c.data.action = 'createIncident';
+		c.server.update().then(function() {
+			c.submitting = false;
+			// send user to incident page
+			document.location= '?id=hn_ticket&table=incident&sys_id=' + c.data.urlID +'&view=sp';
+		});
+	};
+	
+	c.broadcastIssue = function() {
+		$rootScope.$broadcast('incident.issue', c.data.newIncident.issue);
+	};
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>create_an_incident</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Create an Incident</name>
+        <option_schema>[{"name":"template","section":"other","default_value":"list-default.html","label":"Template","type":"string"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	
+	data.newIncident = {
+		issue: '',
+		urgency: ''
+	};
+	
+	if (input && input.action === 'createIncident') {
+		var newIncident = new GlideRecord('incident');
+		newIncident.newRecord();
+		newIncident.short_description = input.newIncident.issue;
+		newIncident.urgency = input.newIncident.urgency
+		var newIncidentSysID = newIncident.insert();
+		data.urlID= newIncidentSysID;
+	}
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-24 16:27:00</sys_created_on>
+        <sys_id>74a1be8c2f92d010d1bd2f2ef699b635</sys_id>
+        <sys_mod_count>60</sys_mod_count>
+        <sys_name>Create an Incident</sys_name>
+        <sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope>
+        <sys_update_name>sp_widget_74a1be8c2f92d010d1bd2f2ef699b635</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-29 15:36:57</sys_updated_on>
+        <template><![CDATA[<div class='panel panel-default'>
+	<div class='panel-heading'>
+    <h4 class='panel-title'>
+      Submit an Incident
+    </h4>
+  </div>
+  
+  <div class='panel-body'>
+    <form>
+      <div class='form-group'>
+      	<label for='issue'>Issue</label>
+        <input type='text' 
+               class='form-control' 
+               id='issue' 
+               placeholder='Sharepoint is down'
+               ng-model='data.newIncident.issue'
+               ng-change="c.broadcastIssue()" />
+      </div>
+      
+      <div class='form-group'>
+        <label for='urgency'>Urgency</label>
+        <select id='urgency' 
+                class='form-control' 
+                ng-model='data.newIncident.urgency'>
+          <option value='1'>High</option>
+          <option value='2'>Medium</option>
+          <option value='3'>Low</option>
+        </select>
+      </div>
+      <p ng-if='c.data.newIncident.urgency === "1"'>
+        Whoa! Someone's a little <em>cocky</em>...
+      </p>
+    </form>
+  </div>
+  
+  <div class='panel-footer'>
+    <button class='btn btn-success' 
+            ng-click='c.submit()'
+            ng-disabled='c.submitting'>
+      Submit<span ng-show='c.submitting'>ting...</span>
+    </button>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

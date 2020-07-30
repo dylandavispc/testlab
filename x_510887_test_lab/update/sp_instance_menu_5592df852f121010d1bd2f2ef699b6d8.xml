@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_menu">
+    <sp_instance_menu action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column/>
+        <sp_widget display_value="Header Menu">5ef595c1cb12020000f8d856634c9c6e</sp_widget>
+        <sys_class_name>sp_instance_menu</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-27 21:25:09</sys_created_on>
+        <sys_id>5592df852f121010d1bd2f2ef699b6d8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>HelpNow</sys_name>
+        <sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope>
+        <sys_update_name>sp_instance_menu_5592df852f121010d1bd2f2ef699b6d8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-28 13:15:50</sys_updated_on>
+        <title>HelpNow</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_menu>
+    <sys_translated_text action="delete_multiple" query="documentkey=5592df852f121010d1bd2f2ef699b6d8"/>
+</record_update>

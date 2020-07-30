@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="DELETE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <name>x_510887_test_lab.ellipsisFilter</name>
+        <script><![CDATA[var x_510887_test_lab = x_510887_test_lab || {};
+
+x_510887_test_lab.ellipsisFilter = (function() {
+	"use strict";
+
+/* set your private variables and functions here. For example: 
+	var privateVar = 0; 
+	function private_function() {
+		return ++privateVar;
+	}
+*/
+
+/* Share variables between multiple UI scripts by adding them to your scope object. For example: 
+	x_510887_test_lab.sharedVar = 0; 
+
+ Then access them in your scripts the same way. For example: 
+	function get_shared() {
+		return x_510887_test_lab.sharedVar;
+	}
+*/
+
+	return {
+
+/* set your public API here. For example:
+		incrementAndReturnPrivateVar: function() {
+			return private_function();
+		},
+*/
+		type:  "ellipsisFilter"
+	};
+})();
+]]></script>
+        <script_name>ellipsisFilter</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-24 14:58:48</sys_created_on>
+        <sys_id>a73d56042f92d010d1bd2f2ef699b6f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_510887_test_lab.ellipsisFilter</sys_name>
+        <sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope>
+        <sys_update_name>sys_ui_script_a73d56042f92d010d1bd2f2ef699b6f3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-24 14:58:48</sys_updated_on>
+        <ui_type>10</ui_type>
+        <use_scoped_format>true</use_scoped_format>
+    </sys_ui_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</application>
+        <file_path/>
+        <instance_id>dd8c29e5db260094387021c4059619b9</instance_id>
+        <instance_name>dev97566</instance_name>
+        <name>sys_ui_script_a73d56042f92d010d1bd2f2ef699b6f3</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;x_510887_test_lab.ellipsisFilter&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var x_510887_test_lab = x_510887_test_lab || {};
+
+x_510887_test_lab.ellipsisFilter = (function() {
+	"use strict";
+
+/* set your private variables and functions here. For example: 
+	var privateVar = 0; 
+	function private_function() {
+		return ++privateVar;
+	}
+*/
+
+/* Share variables between multiple UI scripts by adding them to your scope object. For example: 
+	x_510887_test_lab.sharedVar = 0; 
+
+ Then access them in your scripts the same way. For example: 
+	function get_shared() {
+		return x_510887_test_lab.sharedVar;
+	}
+*/
+
+	return {
+
+/* set your public API here. For example:
+		incrementAndReturnPrivateVar: function() {
+			return private_function();
+		},
+*/
+		type:  "ellipsisFilter"
+	};
+})();
+]]&gt;&lt;/script&gt;&lt;script_name&gt;ellipsisFilter&lt;/script_name&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-24 14:58:48&lt;/sys_created_on&gt;&lt;sys_id&gt;a73d56042f92d010d1bd2f2ef699b6f3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_510887_test_lab.ellipsisFilter&lt;/sys_name&gt;&lt;sys_package display_value="Test Lab" source="x_510887_test_lab"&gt;f74f10c32f311010d1bd2f2ef699b6f3&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Test Lab"&gt;f74f10c32f311010d1bd2f2ef699b6f3&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_a73d56042f92d010d1bd2f2ef699b6f3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-24 14:58:48&lt;/sys_updated_on&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;use_scoped_format&gt;true&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2046859016</payload_hash>
+        <record_name>x_510887_test_lab.ellipsisFilter</record_name>
+        <reverted_from/>
+        <source>4faf90832f311010d1bd2f2ef699b6c7</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-24 14:58:49</sys_created_on>
+        <sys_id>817d1a042f92d010d1bd2f2ef699b60d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1738155784e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-24 14:58:49</sys_updated_on>
+        <type>UI Script</type>
+        <update_guid>c97d1a049c92d010cfc9f2486e01530c</update_guid>
+        <update_guid_history>c97d1a049c92d010cfc9f2486e01530c:2046859016</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-24 14:59:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_script">sys_ui_script</sys_db_object>
+        <sys_id>66dd4b0c84bb4040ae1e8ad1153e0b64</sys_id>
+        <sys_metadata>a73d56042f92d010d1bd2f2ef699b6f3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_510887_test_lab.ellipsisFilter</sys_name>
+        <sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope>
+        <sys_scope_delete display_value="">2935f8c70c7446b48e6319cadc6faae4</sys_scope_delete>
+        <sys_update_name>sys_ui_script_a73d56042f92d010d1bd2f2ef699b6f3</sys_update_name>
+        <sys_update_version display_value="sys_ui_script_a73d56042f92d010d1bd2f2ef699b6f3">817d1a042f92d010d1bd2f2ef699b60d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-24 14:59:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

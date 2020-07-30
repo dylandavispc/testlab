@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description>A Portfolio of my CrAzIeSt Inventions!!!</short_description>
+        <size>lg</size>
+        <sp_column display_value="1">84e965572f3d1010d1bd2f2ef699b6d5</sp_column>
+        <sp_widget display_value="Homepage Search">200fbd96cb20020000f8d856634c9ca1</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-09 17:02:20</sys_created_on>
+        <sys_id>04e965572f3d1010d1bd2f2ef699b6d7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Welcome to the Lab</sys_name>
+        <sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope>
+        <sys_update_name>sp_instance_04e965572f3d1010d1bd2f2ef699b6d7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-09 17:16:36</sys_updated_on>
+        <title>Welcome to the Lab</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"typeahead_search": {
+		"value": "Search into my madness",
+		"displayValue": "Search into my madness"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=04e965572f3d1010d1bd2f2ef699b6d7"/>
+</record_update>

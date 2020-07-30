@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <name>x_510887_test_lab.ellipsisFilter</name>
+        <script><![CDATA[(function() {
+	angular.module('ellipsisFilter', []).filter('ellipsis', function() {
+		return function(value, length) {
+			if (value.length < length) {
+				return value;
+			}
+			if (length) {
+				// set length to length parameter
+				length = parseInt(length);
+				// set value to the initial character in the string to the set length
+				value = value.substr(0, length);
+				var lastSpace = value.lastIndexOf(' ');
+				if (lastSpace != -1) {
+					if (value.charAt(lastSpace - 1) == '.' || value.charAt(lastSpace -1) == ",") {
+						value = value.substr(0, lastSpace);
+					}
+				}
+			}
+			return value + " ...";
+		};
+	});
+});]]></script>
+        <script_name>ellipsisFilter</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-24 15:52:52</sys_created_on>
+        <sys_id>f059aec82f92d010d1bd2f2ef699b603</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_510887_test_lab.ellipsisFilter</sys_name>
+        <sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope>
+        <sys_update_name>sys_ui_script_f059aec82f92d010d1bd2f2ef699b603</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-24 15:54:41</sys_updated_on>
+        <ui_type>10</ui_type>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>

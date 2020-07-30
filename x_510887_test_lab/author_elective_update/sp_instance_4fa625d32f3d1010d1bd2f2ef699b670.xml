@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description>A Portfolio of my CrAzIeSt Inventions!!!</short_description>
+        <size>md</size>
+        <sp_column display_value="1">7fe761172f3d1010d1bd2f2ef699b61e</sp_column>
+        <sp_widget display_value="Homepage Search">200fbd96cb20020000f8d856634c9ca1</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-09 16:48:20</sys_created_on>
+        <sys_id>4fa625d32f3d1010d1bd2f2ef699b670</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Test Lab</sys_name>
+        <sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope>
+        <sys_update_name>sp_instance_4fa625d32f3d1010d1bd2f2ef699b670</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-09 16:53:56</sys_updated_on>
+        <title>Test Lab</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"typeahead_search": {
+		"value": "Search through my madness",
+		"displayValue": "Search through my madness"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=4fa625d32f3d1010d1bd2f2ef699b670"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</application>
+        <file_path/>
+        <instance_id>dd8c29e5db260094387021c4059619b9</instance_id>
+        <instance_name>dev97566</instance_name>
+        <name>sp_instance_4fa625d32f3d1010d1bd2f2ef699b670</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description&gt;A Portfolio of my CrAzIeSt Inventions!!!&lt;/short_description&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;7fe761172f3d1010d1bd2f2ef699b61e&lt;/sp_column&gt;&lt;sp_widget display_value="Homepage Search"&gt;200fbd96cb20020000f8d856634c9ca1&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-09 16:48:20&lt;/sys_created_on&gt;&lt;sys_id&gt;4fa625d32f3d1010d1bd2f2ef699b670&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Test Lab&lt;/sys_name&gt;&lt;sys_package display_value="Test Lab" source="x_510887_test_lab"&gt;f74f10c32f311010d1bd2f2ef699b6f3&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Test Lab"&gt;f74f10c32f311010d1bd2f2ef699b6f3&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_4fa625d32f3d1010d1bd2f2ef699b670&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-09 16:53:56&lt;/sys_updated_on&gt;&lt;title&gt;Test Lab&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"typeahead_search": {
+		"value": "Search through my madness",
+		"displayValue": "Search through my madness"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=4fa625d32f3d1010d1bd2f2ef699b670"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>361477063</payload_hash>
+        <record_name>Test Lab</record_name>
+        <reverted_from/>
+        <source>4faf90832f311010d1bd2f2ef699b6c7</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-09 16:53:56</sys_created_on>
+        <sys_id>91f761172f3d1010d1bd2f2ef699b661</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>173347f7bd40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-09 16:53:56</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>d9f761177a3d1010dcd1660016864860</update_guid>
+        <update_guid_history>d9f761177a3d1010dcd1660016864860:361477063,84c7a9d3c03d1010c699d10465724086:-137290486,17a625d3fc3d10107cb336cc0c7cbb72:1746681256</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Test Lab">0bf769d32f3d1010d1bd2f2ef699b67b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-09 16:54:03</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>883cf16feddc400eb7a21fceae7a2cd9</sys_id>
+        <sys_metadata>4fa625d32f3d1010d1bd2f2ef699b670</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test Lab</sys_name>
+        <sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope>
+        <sys_scope_delete display_value="">2935f8c70c7446b48e6319cadc6faae4</sys_scope_delete>
+        <sys_update_name>sp_instance_4fa625d32f3d1010d1bd2f2ef699b670</sys_update_name>
+        <sys_update_version display_value="sp_instance_4fa625d32f3d1010d1bd2f2ef699b670">91f761172f3d1010d1bd2f2ef699b661</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-09 16:54:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

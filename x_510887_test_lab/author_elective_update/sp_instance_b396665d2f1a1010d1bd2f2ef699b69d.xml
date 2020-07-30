@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">db36a65d2f1a1010d1bd2f2ef699b654</sp_column>
+        <sp_widget display_value="Ticket Fields">5736bf52cb30020000f8d856634c9c2d</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-28 12:51:16</sys_created_on>
+        <sys_id>b396665d2f1a1010d1bd2f2ef699b69d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope>
+        <sys_update_name>sp_instance_b396665d2f1a1010d1bd2f2ef699b69d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-28 12:51:43</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=b396665d2f1a1010d1bd2f2ef699b69d"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</application>
+        <file_path/>
+        <instance_id>dd8c29e5db260094387021c4059619b9</instance_id>
+        <instance_name>dev97566</instance_name>
+        <name>sp_instance_b396665d2f1a1010d1bd2f2ef699b69d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="2">db36a65d2f1a1010d1bd2f2ef699b654</sp_column><sp_widget display_value="Ticket Fields">5736bf52cb30020000f8d856634c9c2d</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-07-28 12:51:16</sys_created_on><sys_id>b396665d2f1a1010d1bd2f2ef699b69d</sys_id><sys_mod_count>2</sys_mod_count><sys_name/><sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package><sys_policy/><sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope><sys_update_name>sp_instance_b396665d2f1a1010d1bd2f2ef699b69d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-07-28 12:51:43</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=b396665d2f1a1010d1bd2f2ef699b69d"/></record_update>]]></payload>
+        <payload_hash>951995974</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>4faf90832f311010d1bd2f2ef699b6c7</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-28 12:51:43</sys_created_on>
+        <sys_id>2ab6ea5d2f1a1010d1bd2f2ef699b66a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>173957a8e040000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-28 12:51:43</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>eeb6265d401a1010251a0e4d882c83da</update_guid>
+        <update_guid_history>eeb6265d401a1010251a0e4d882c83da:951995974,a1a6aa5d771a10103a95fce07363a1a9:141420420,7796665d961a1010354031738af9bb9e:546708197</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">94e0acb92f521010d1bd2f2ef699b6dd</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-29 16:23:54</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>55b4ca69462e4664b42ae66a26d71210</sys_id>
+        <sys_metadata>b396665d2f1a1010d1bd2f2ef699b69d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope>
+        <sys_scope_delete display_value="">2935f8c70c7446b48e6319cadc6faae4</sys_scope_delete>
+        <sys_update_name>sp_instance_b396665d2f1a1010d1bd2f2ef699b69d</sys_update_name>
+        <sys_update_version display_value="sp_instance_b396665d2f1a1010d1bd2f2ef699b69d">2ab6ea5d2f1a1010d1bd2f2ef699b66a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-29 16:23:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

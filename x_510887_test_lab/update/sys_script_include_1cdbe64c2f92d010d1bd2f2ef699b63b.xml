@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_510887_test_lab.PortalUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>PortalUtils</name>
+        <script><![CDATA[var PortalUtils = Class.create();
+PortalUtils.prototype = {
+    initialize: function() {
+    },
+	
+	// Create a new incident
+	createIncident: function(inc) {
+		var incidentGR = new GlideRecord('incident');
+		incidentGR.newRecord();
+		incidentGR.setValue('caller_id', gs.getUserID());
+		incidentGR.setValue('short_description', inc.issue);
+		incidentGR.setValue('urgency', inc.urgency);
+		incidentGR.insert();
+	},
+	
+	// Get up to 5 recent incidents
+	getRecentIncidents: function($sp, limit) {
+		var items = [];
+		var incidentGR = new GlideRecord('incident');
+		if (!limit || limit < 1 || limit > 20) {
+			incidentGR.setLimit(5);
+		} else {
+			incidentGR.setLimit(limit);
+		}
+		incidentGR.orderByDesc('sys_created_on');
+		incidentGR.query();
+		while (incidentGR.next()) {
+			// Push object of fields that match the GlideRecords elements to items array
+			var obj = {};
+			$sp.getRecordElements(obj, incidentGR, data.fields);
+			if (obj.urgency.value === '1') {
+				obj.urgencyIcon = 'exclamation-triangle';
+			} else if (obj.urgency.value === '2') {
+				obj.urgencyIcon = 'exclamation-circle';
+			} else {
+				obj.urgencyIcon = 'exclamation';
+			}
+			items.push(obj);
+		}
+		return items;
+	},
+
+    type: 'PortalUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-24 16:04:26</sys_created_on>
+        <sys_id>1cdbe64c2f92d010d1bd2f2ef699b63b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>PortalUtils</sys_name>
+        <sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope>
+        <sys_update_name>sys_script_include_1cdbe64c2f92d010d1bd2f2ef699b63b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-24 18:39:36</sys_updated_on>
+    </sys_script_include>
+</record_update>

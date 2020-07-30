@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>2</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">ce828ebf2fc69010d1bd2f2ef699b6cc</sp_column>
+        <sp_widget display_value="Incident List">02824ebf2fc69010d1bd2f2ef699b6bd</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-23 18:22:43</sys_created_on>
+        <sys_id>8e828ebf2fc69010d1bd2f2ef699b6ce</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Recent Incidents</sys_name>
+        <sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope>
+        <sys_update_name>sp_instance_8e828ebf2fc69010d1bd2f2ef699b6ce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-24 18:40:36</sys_updated_on>
+        <title>Recent Incidents</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"template": {
+		"value": "",
+		"displayValue": ""
+	},
+	"limit": {
+		"value": 15,
+		"displayValue": "15"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=8e828ebf2fc69010d1bd2f2ef699b6ce"/>
+</record_update>
