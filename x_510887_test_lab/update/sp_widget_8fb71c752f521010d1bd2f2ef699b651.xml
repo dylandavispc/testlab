@@ -1,16 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[function ($scope, spUtil) {
+        <client_script><![CDATA[function ($scope, spUtil, spModal) {
 	var c = this;
 	spUtil.recordWatch($scope, $scope.data.table, "sys_id=" + $scope.data.sys_id); 
 	
+	$scope.$on('tempUrgency', function(event, data) {
+		c.tempUrgency = data;
+	})
+	
 	c.modifyIncident = function() {
+		var urgency = c.data.urgency;
+		var shared = urgency;
 		console.log('testMod');
+		spModal.open({
+			title: 'bumm',
+			widget: 'edit_incident_urgency', 
+			widgetInput: {},
+			shared: shared
+		}).then(function (x) {
+			console.log(x.primary);
+			if (x.primary === true) {
+				console.log(c.tempUrgency);
+				c.data.urgencyUpdate = c.tempUrgency;
+				c.data.action = 'modifyIncident';
+				console.log('urgencyUpdate' + c.data.urgencyUpdate)
+				c.server.update();
+			}
+		})
 	};
 	
 	c.deleteIncident = function() {
 		console.log('testDel');
+		c.confirmed = "asking";
+		var warn = '<i class="fa fa-warning" aria-hidden="true"></i>';
+		spModal.open({
+			title: 'Delete this Incident?',
+			message: warn + ' Are you <b>sure</b> you want to delete the record?'
+		}).then(function(confirmed) {
+			c.confirmed = confirmed.primary;
+			if (c.confirmed) {
+				c.data.action = 'deleteIncident';
+				c.server.update().then(function() {
+					console.log('redirecting...')
+					document.location = '/hn';
+				})
+			}
+		});
 	};
 }]]></client_script>
         <controller_as>c</controller_as>
@@ -66,13 +102,15 @@
 	data.canDelete = gr.canDelete();
 	if (!data.canWrite || !data.canDelete || !data.canRead)
 		return;
-
+	
 	var agent = "";
 	var a = $sp.getField(gr, 'assigned_to');
 	if (a != null)
 		agent = a.display_value;
 
 	var fields = $sp.getFields(gr, 'number,state,priority,sys_created_on');
+	var urgency = gr.getValue('urgency');
+	data.urgency = urgency;
 	if (gr.getValue("sys_mod_count") > 0)
 		fields.push($sp.getField(gr, 'sys_updated_on'));
 
@@ -90,25 +128,44 @@
 
 	data.tableLabel = gr.getLabel();
 	data.fields = fields;
-	data.variables = new GlobalServiceCatalogUtil().getVariablesForTask(gr, true);
+	// data.variables = new GlobalServiceCatalogUtil().getVariablesForTask(gr, true);
 	data.agent = agent;
 	data.agentPossible = gr.isValidField("assigned_to");
 	data.table = gr.getTableName();
 	data.sys_id = gr.getUniqueValue();
+	
+	// Modify Incident
+	if (input && input.action === 'modifyIncident') {
+		console.log('modifying Incident...');
+		console.log('modifying Incident log: '+input.urgencyUpdate);
+		var grIncident = new GlideRecord('incident');
+		grIncident.get(data.sys_id)
+		grIncident.urgency = input.urgencyUpdate;
+		grIncident.update();
+		console.log(gr.getElement('urgency'));
+	}
+	
+	// Delete Incident
+	if (input && input.action === 'deleteIncident') {
+		console.log('deleting record: ' + data.sys_id);
+		if (gr.get(data.sys_id)) {
+			gr.deleteRecord();
+		}
+	}
 })()]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-07-29 15:43:56</sys_created_on>
         <sys_id>8fb71c752f521010d1bd2f2ef699b651</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>111</sys_mod_count>
         <sys_name>Ticket Editor</sys_name>
         <sys_package display_value="Test Lab" source="x_510887_test_lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_package>
         <sys_policy/>
         <sys_scope display_value="Test Lab">f74f10c32f311010d1bd2f2ef699b6f3</sys_scope>
         <sys_update_name>sp_widget_8fb71c752f521010d1bd2f2ef699b651</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-07-29 16:27:41</sys_updated_on>
+        <sys_updated_on>2020-07-31 11:57:07</sys_updated_on>
         <template><![CDATA[<div ng-if="data.canRead" class="panel b">
   <div class="panel-heading bg-primary panel-la-jolla-default">
     <div ng-init="spSearch.targetRequests()">
@@ -139,13 +196,13 @@
       
     </dl>
     <div class="incidentModButtons">
-        <button ng-if="data.canWrite" class="btn btn-success mt-5" ng-click="c.modifyIncident()">
-          Modify Priority
-        </button>
+      <button ng-if="data.canWrite" class="btn btn-success mt-5" ng-click="c.modifyIncident()">
+        Modify Priority
+      </button>
 
-        <button ng-if="data.canDelete" class="btn btn-danger" ng-click="c.deleteIncident()">
-          Delete Incident
-        </button>
+      <button ng-if="data.canDelete" class="btn btn-danger" ng-click="c.deleteIncident()">
+        Delete Incident
+      </button>
       </div>
     <div ng-if="data.variables.length > 0" ng-init="c.variable_toggle = true">
       <button class="h4 options-btn btn" ng-click="c.variable_toggle = !c.variable_toggle" aria-expanded="{{c.variable_toggle}}" aria-controls="variables-toggle">
